@@ -287,3 +287,4 @@ body.dark-mode .login-note { color: #a6b8ac; }
 body.dark-mode .login-note.error { color: #ffaaa1; }
 body.dark-mode .login-card input::placeholder,
 body.dark-mode .add-form input::placeholder { color: #879a8c; }
+
