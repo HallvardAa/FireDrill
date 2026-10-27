@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <title>Brann-alarm check</title>
+  <defs>
+    <mask id="login-logo-mask" maskUnits="userSpaceOnUse" mask-type="alpha" x="0" y="0" width="96" height="96">
+      <image href="login-logo-mask.png" width="96" height="96"/>
+    </mask>
+  </defs>
+  <path id="login-logo" fill="currentColor" mask="url(#login-logo-mask)" d="M0 0h96v96H0z"/>
+</svg>
