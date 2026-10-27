@@ -161,7 +161,11 @@ body.theme-transitioning * {
     body.theme-transitioning * { transition-duration: .01ms !important; }
 }
 
-.login-page { width: min(100%, 430px); }
+.login-page { display: grid; width: min(100%, 430px); min-height: calc(100vh - 112px); grid-template-rows: 1fr auto; }
+.login-card { align-self: center; }
+.login-footer { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 5px; padding-top: 20px; color: var(--muted); font-size: 11px; text-align: center; }
+.login-footer a { color: var(--teal-dark); font-size: 14px; text-decoration: none; }
+.login-footer a:hover { text-decoration: underline; }
 .login-card { position: relative; display: flex; flex-direction: column; padding: 38px; border: 1px solid rgba(255, 255, 255, .85); border-radius: 24px; background: var(--paper); box-shadow: 0 28px 70px rgba(23, 55, 69, .13), 0 3px 10px rgba(23, 55, 69, .04); }
 .login-mark { position: relative; display: grid; width: 120px; height: 80px; align-self: center; margin: 0 auto 22px; place-items: center; }
 .login-mark-logo { position: absolute; top: -20px; left: 0; display: block; width: 120px; height: 120px; overflow: visible; color: #429f5c; transition: color .55s cubic-bezier(.4, 0, .2, 1); }
@@ -210,6 +214,7 @@ body.dark-mode .login-mark-logo { color: #3e9357; }
 
 @media (max-width: 600px) {
     .login-page { width: 100%; }
+    .login-footer { padding-top: 16px; }
     .login-card { padding: 28px 22px; border-radius: 18px; }
     .header { padding-right: 70px; }
     .account-menu { top: 0; }
@@ -287,4 +292,3 @@ body.dark-mode .login-note { color: #a6b8ac; }
 body.dark-mode .login-note.error { color: #ffaaa1; }
 body.dark-mode .login-card input::placeholder,
 body.dark-mode .add-form input::placeholder { color: #879a8c; }
-
